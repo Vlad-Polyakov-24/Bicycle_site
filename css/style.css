@@ -63,6 +63,7 @@ visibility: hidden;
 .container {
 	max-width: 1130px;
 	padding: 0 15px;
+	margin: 0 auto;
 }
 .wrapper {
 	overflow: hidden;
@@ -172,8 +173,40 @@ visibility: hidden;
 	top: 0;
 	left: 0;
 }
-.content {}
 
+/*SCREEN_1*/
+
+.generation {
+	padding: 120px 0;
+	background-color: #f7f7f7;
+}
+.generation__block {}
+.block {
+	text-align: center;
+}
+.block__icon {
+	margin: 0 0 30px 0;
+}
+.block__title {
+	color: #353738;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 3.6px;
+	margin: 0 0 18px 0;
+	line-height: 34px;
+}
+.block__text {
+	color: #848789;
+	font-size: 18px;
+	line-height: 34px;
+}
+
+@media (max-width: 900px) {
+	.generation {
+	padding: 80px 0;
+	}
+}
 
 @media (max-width: 767px) {
 	.menu__body {
@@ -265,4 +298,10 @@ visibility: hidden;
 		bottom: 8px;
 	}
 /*БУРГЕР-END*/
+}
+
+@media (max-width: 600px) {
+	.generation {
+	padding: 30px 0;
+	}
 }
