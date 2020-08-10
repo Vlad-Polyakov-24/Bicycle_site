@@ -1,11 +1,11 @@
 $('.wrapper').addClass('loaded');
-
+/*BURGER*/
 $('.icon-menu').click(function(event){
 	$(this).toggleClass('active');
-	$('menu__body').toggleClass('active');
+	$('.menu__body').toggleClass('active');
 	$('body').toggleClass('lock');
 });
-
+/*BURGER-END*/
 	function ibg(){
 
 	$.each($('.ibg'), function(index, val) {
