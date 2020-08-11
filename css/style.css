@@ -410,8 +410,23 @@ visibility: hidden;
 	flex: 0 1 33.333%;
 }
 .shop__block {}
-.shop__footer {}
-.shop__btn {}
+.shop__footer {
+	background-color: #282f35;
+	padding: 75px 0;
+	text-align: center;
+}
+.shop__btn {
+	display: inline-block;
+	height: 50px;
+	line-height: 48px;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #fff;
+	letter-spacing: 2.8px;
+	padding: 0 60px;
+}
 .block-shop {
 	height: 100%;
 }
@@ -485,11 +500,41 @@ visibility: hidden;
 	.slick-slider .slick-dots {
 		padding: 50px 0 0 0;
 	}
+	.shop__body {
+		flex-wrap: wrap;
+	}
+	.shop__column {
+		flex: 0 1 50%;
+	}
+	.shop__column_b {
+
+	}
+	.shop__column:first-child {
+		flex: 1 1 100%;
+	}
+	.shop__column:last-child {
+		flex: 1 1 100%;
+	}
+	.block-shop__item {
+		padding: 0 0 40% 0;
+	}
+	.block-shop__item_b {
+		padding: 0 0 200% 0;
+	}
+	.block-shop__item_l {
+    	padding: 0 0 60% 0;
+	}
+	.shop__btn {
+		padding: 0 30px;
+	}
+	.shop__footer {
+		padding: 50px 0;
+	}
 }
 
 @media (max-width: 900px) {
 	.generation {
-		padding: 80px 0;
+		padding: 40px 0;
 	}
 	.block__text_j:after{
 		margin: 15px auto 0px auto;
@@ -555,6 +600,9 @@ visibility: hidden;
 	.slider__text {
     	font-size: 18px;
     }
+    .shop__footer {
+	    padding: 40px 0;
+	}
 /*БУРГЕР*/
 	.icon-menu {
 		display: block;
