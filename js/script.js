@@ -6,6 +6,8 @@ $('.icon-menu').click(function(event){
 	$('body').toggleClass('lock');
 });
 /*BURGER-END*/
+
+/*IBG*/
 	function ibg(){
 
 	$.each($('.ibg'), function(index, val) {
@@ -16,3 +18,23 @@ $('.icon-menu').click(function(event){
 	}
 
 	ibg();
+/*IBG-END*/
+
+/*SLIDER-END*/
+if($('.slider__body').length>0){
+	$('.slider__body').slick({
+		dots:true,
+		arrow:false,
+		accessibility:false,
+		sliderToShow: 1,
+		autoplayslider: 3000,
+		adaptiveHeight: true,
+		nextArrow: '<button type="button" class="slick-next"></button>',
+		prevArrow: '<button type="button" class="slick-prev"></button>',
+		responsive: [{
+			breakpoint: 768,
+			settings: {}
+		}]
+	});
+}
+/*SLIDER-END*/

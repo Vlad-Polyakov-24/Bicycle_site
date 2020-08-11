@@ -70,6 +70,56 @@ visibility: hidden;
 	min-height: 100%;
 }
 
+/*SLIDER*/
+
+.slick-slider {
+	position: relative;
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+
+}
+.slick-slider .slick-list {
+	overflow: hidden;
+}
+.slick-slider .slick-track {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	align-items: flex-start;
+}
+.slick-slider .slick-slide {
+
+}
+.slick-slider .slick-dots {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 100px 0 0 0;
+}
+.slick-slider .slick-dots li {
+	margin: 0 5px;
+}
+.slick-slider .slick-dots li button {
+	font-size: 0;
+	width: 11px;
+	height: 11px;
+	border-radius: 50%;
+	border: 1px solid #c8c8c8;
+	background-color: transparent;
+}
+.slick-slider .slick-dots li.slick-active button{
+	background-color: #a9afb3;
+}
+.slick-list .draggable {
+	max-height: 100%;
+}
 /*Общие стили*/
 
 /*HEADER*/
@@ -271,6 +321,7 @@ visibility: hidden;
 	justify-content: center;
 	align-items: center;
 	z-index: 2;
+	flex-direction: column;
 	background-color: rgba(100, 194, 158, 0.5);
 	opacity: 0;
 	transition: all 0.3s ease 0s;
@@ -310,6 +361,89 @@ visibility: hidden;
 
 }
 
+/*SCREEN_5*/
+
+.slider {
+	background-color: #f7f7f7;
+	padding: 120px 0 60px 0;
+}
+.slider__body {}
+.slider__item {
+	text-align: center;
+}
+.slider__icon {
+	margin: 0 0 35px 0;
+}
+.slider__title {
+	margin: 0 0 20px 0;
+	color: #353738;
+	font-size: 18px;
+	font-weight: 700;
+}
+.slider__title span{
+	color: #848789;
+	font-weight: 300;
+}
+.slider__text {
+	text-align: center;
+	color: #848789;
+	font-size: 24px;
+	font-family: Lato;
+	font-style: italic;
+	line-height: 34px;
+}
+
+/*GALERY*/
+
+.shop {}
+.shop__body {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+.shop__column {
+	flex: 0 1 16.666%;
+}
+.shop__column_b {
+	flex: 0 1 33.333%;
+}
+.shop__block {}
+.shop__footer {}
+.shop__btn {}
+.block-shop {
+	height: 100%;
+}
+.block-shop__row {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+.block-shop__column {
+	flex: 0 1 50%;
+}
+.block-shop__item {
+	height: auto;
+	padding: 0 0 59.6% 0;
+}
+.block-shop__item_b {
+	padding: 0 0 238.21% 0;
+}
+.block-shop__item_l {
+	padding: 0 0 119% 0;
+}
+.item__logo span {
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 2.8px;
+	text-transform: uppercase;
+	color: #fff;
+	margin: 10px 0 0 0;
+}
+
 @media (max-width: 1500px) {
 	.brands__content {
 		padding: 40px 35px 30px 35px;
@@ -344,6 +478,12 @@ visibility: hidden;
 		-ms-order: 3;
 		-o-order: 3;
 		order: 3;
+	}
+	.slider {
+		padding: 60px 0 60px 0;
+	}
+	.slick-slider .slick-dots {
+		padding: 50px 0 0 0;
 	}
 }
 
@@ -406,6 +546,15 @@ visibility: hidden;
 	.header {
 		top: 15px;
 	}
+	.slick-slider .slick-dots {
+	    padding: 30px 0 0 0;
+	}
+	.slider {
+    	padding: 35px 0 35px 0;
+	}
+	.slider__text {
+    	font-size: 18px;
+    }
 /*БУРГЕР*/
 	.icon-menu {
 		display: block;
@@ -452,4 +601,7 @@ visibility: hidden;
 	.generation {
 		padding: 30px 0;
 	}
+	.slider__text {
+    	font-size: 16px;
+    }
 }
