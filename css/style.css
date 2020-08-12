@@ -189,6 +189,11 @@ visibility: hidden;
 	text-transform: uppercase;
 	letter-spacing: 2.6px;
 }
+.menu__link:hover {
+	color: #64c29e;
+	font-weight: 900;
+	transition: all 0.2s ease 0s;
+}
 .header__logo {
 	position: absolute;
 	left: 50%;
@@ -427,6 +432,11 @@ visibility: hidden;
 	letter-spacing: 2.8px;
 	padding: 0 60px;
 }
+.shop__btn:hover {
+	background-color: #fff;
+	color: #282f35;
+	transition: all 0.3s ease 0s;
+}
 .block-shop {
 	height: 100%;
 }
@@ -514,6 +524,13 @@ visibility: hidden;
 	font-size: 24px;
 	text-transform: uppercase;
 	font-weight: 300;
+}
+.subscribe__btn:hover {
+	color: #64c29e;
+	background-color: #fff;
+	border: 2px solid #64c29e;
+	font-weight: 700;
+	transition: 0.3s ease 0s;
 }
 
 /*contact-end*/
